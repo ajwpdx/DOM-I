@@ -57,4 +57,50 @@ headerNav[3].textContent = siteContent['nav']['nav-item-4']
 headerNav[4].textContent = siteContent['nav']['nav-item-5']
 headerNav[5].textContent = siteContent['nav']['nav-item-6']
 
-let 
+let ctaText = document.querySelector('.cta-text h1')
+console.log(ctaText)
+ctaText.textContent = siteContent.cta.h1
+let ctaButton = document.querySelector('.cta-text button')
+console.log(ctaButton)
+ctaButton.textContent = siteContent.cta.button
+
+
+
+//Green Nav
+headerNav.forEach(link => {
+  link.style.color = 'green';
+})
+
+let contentHeaders = document.querySelectorAll('.main-content h4')
+console.log(contentHeaders)
+
+contentHeaders[0].textContent = siteContent['main-content']['features-h4']
+contentHeaders[1].textContent = siteContent['main-content']['about-h4']
+contentHeaders[2].textContent = siteContent['main-content']['services-h4']
+contentHeaders[3].textContent = siteContent['main-content']['product-h4']
+contentHeaders[4].textContent = siteContent['main-content']['vision-h4']
+
+let contentParagraphs = document.querySelectorAll('.main-content p')
+
+contentParagraphs[0].textContent = siteContent['main-content']['features-content']
+contentParagraphs[1].textContent = siteContent['main-content']['about-content']
+contentParagraphs[2].textContent = siteContent['main-content']['services-content']
+contentParagraphs[3].textContent = siteContent['main-content']['product-content']
+contentParagraphs[4].textContent = siteContent['main-content']['vision-content']
+
+
+let contactTitle = document.querySelector('.contact h4')
+
+contactTitle.textContent = siteContent.contact['contact-h4']
+
+let contactInfo = document.querySelectorAll('.contact p')
+
+console.log(contactInfo)
+
+contactInfo[0].textContent = siteContent.contact['address']
+contactInfo[1].textContent = siteContent.contact['phone']
+contactInfo[2].textContent = siteContent.contact['email']
+
+let copyright = document.querySelector('footer p')
+
+copyright.textContent = siteContent.footer.copyright
