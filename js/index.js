@@ -47,4 +47,14 @@ middleImg.setAttribute('src',siteContent['main-content']['middle-img-src'])
 let ctaImg = document.getElementById('cta-img');
 ctaImg.setAttribute('src',siteContent.cta["img-src"])
 
-let nav = document.querySelectorAll(header)
+let headerNav = document.querySelectorAll('header nav a')
+
+console.log(headerNav)
+headerNav[0].textContent = siteContent['nav']['nav-item-1']
+headerNav[1].textContent = siteContent['nav']['nav-item-2']
+headerNav[2].textContent = siteContent['nav']['nav-item-3']
+headerNav[3].textContent = siteContent['nav']['nav-item-4']
+headerNav[4].textContent = siteContent['nav']['nav-item-5']
+headerNav[5].textContent = siteContent['nav']['nav-item-6']
+
+let 
