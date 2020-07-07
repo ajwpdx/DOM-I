@@ -104,3 +104,14 @@ contactInfo[2].textContent = siteContent.contact['email']
 let copyright = document.querySelector('footer p')
 
 copyright.textContent = siteContent.footer.copyright
+
+const nav = document.querySelector('nav');
+
+
+let navAppend = document.createElement('a');
+navAppend.textContent = 'More';
+nav.appendChild(navAppend);
+
+let navPrepend = document.createElement('a');
+navPrepend.textContent = 'Home'
+nav.prepend(navPrepend);
