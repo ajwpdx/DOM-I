@@ -115,3 +115,11 @@ nav.appendChild(navAppend);
 let navPrepend = document.createElement('a');
 navPrepend.textContent = 'Home'
 nav.prepend(navPrepend);
+
+let cta = document.querySelector('.cta');
+
+cta.style.background = 'goldenrod';
+
+let header = document.querySelector('.container');
+
+header.style.background = 'crimson'
